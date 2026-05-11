@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Support for Match Point — the tennis matchmaking app. Find tennis partners at your level, nearby." />
+  <title>Match Point — Support</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%232259FD'/%3E%3Ctext x='50' y='66' font-family='-apple-system,sans-serif' font-size='52' font-weight='700' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --primary: #2259FD;
+      --primary-light: #EEF2FF;
+      --text-primary: #111827;
+      --text-secondary: #6B7280;
+      --text-tertiary: #7C8595;
+      --border: #E5E7EB;
+      --bg: #F8F9FA;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      color: var(--text-primary);
+      background: var(--bg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 56px;
+    }
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: -0.5px;
+    }
+    .brand {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      margin: 0 0 12px;
+      line-height: 1.15;
+    }
+    .lede {
+      font-size: 17px;
+      color: var(--text-secondary);
+      margin: 0 0 48px;
+      max-width: 520px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin: 48px 0 16px;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .contact-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-tertiary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .contact-value {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .contact-value a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .contact-value a:hover {
+      text-decoration: underline;
+    }
+    .response {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      margin-top: 14px;
+    }
+    .faq-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0 0 6px;
+    }
+    .faq-a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+    .faq-a a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-tertiary);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    footer a {
+      color: var(--text-tertiary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--text-primary);
+    }
+    @media (max-width: 480px) {
+      main { padding: 40px 20px 64px; }
+      h1 { font-size: 28px; }
+      header { margin-bottom: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="logo">M</div>
+      <div class="brand">Match Point</div>
+    </header>
+
+    <h1>Support</h1>
+    <p class="lede">
+      Need help with your account, a match, or anything else? We're a small team and read every email.
+    </p>
+
+    <div class="card">
+      <div class="contact-row">
+        <div>
+          <div class="contact-label">Email us</div>
+          <div class="contact-value">
+            <a href="mailto:idan.michael3@gmail.com">idan.michael3@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <p class="response">We aim to reply within 24 hours.</p>
+    </div>
+
+    <h2>Common questions</h2>
+    <div class="card">
+      <div class="faq-item">
+        <p class="faq-q">How do I delete my account?</p>
+        <p class="faq-a">
+          Open the app, tap your profile, then Settings &rarr; Delete account.
+          All your data, matches, and messages are permanently removed.
+        </p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How do I report or block another player?</p>
+        <p class="faq-a">
+          From any chat or profile, tap the menu in the top-right and choose
+          Report or Block. Reports are reviewed within 24 hours.
+        </p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How does skill-level matching work?</p>
+        <p class="faq-a">
+          Match Point uses the NTRP rating scale (2.0&ndash;7.0). You set yours
+          during onboarding, and we surface players within roughly half a point
+          of your level.
+        </p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">My location isn't showing the right courts.</p>
+        <p class="faq-a">
+          Match Point only shows courts within your search radius. You can
+          widen it from the home screen, or check that location permissions
+          are enabled in iOS Settings.
+        </p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">I'm having a different problem.</p>
+        <p class="faq-a">
+          Email us at <a href="mailto:idan.michael3@gmail.com">idan.michael3@gmail.com</a>
+          and include your iPhone model and iOS version. Screenshots help.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div>&copy; <span id="year"></span> Match Point</div>
+      <div><a href="privacy.html">Privacy Policy</a></div>
+    </footer>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
